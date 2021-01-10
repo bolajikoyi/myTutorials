@@ -1,0 +1,15 @@
+<button #btn style="margin-right: 20px">obs Event</button>
+<button (click)="multiplyBy2()">MultiplyBy2</button>
+
+<form action="" style="margin-top: 10px">
+  <label for="">Name:</label>
+  <input #name type="text" />
+</form>
+
+<div>
+  <ul>
+    <li *ngFor="let Pizza of pizza$ | async">
+      {{ Pizza.name }} {{ Pizza.price }}
+    </li>
+  </ul>
+</div>

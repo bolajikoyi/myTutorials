@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "AngularNestedRouting"
+  "defaultProject": "AngularNestedRouting",
+  "cli": {
+    "analytics": false
+  }
 }

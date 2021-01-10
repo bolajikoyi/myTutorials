@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="header-buttons">
+    <ul>
+      <li>
+        <a [routerLink]="'observable'" routerLinkActive="active">Observables</a>
+      </li>
+      <li>
+        <a [routerLink]="'tutorial'" routerLinkActive="active">Tutorial</a>
+      </li>
+      <li>
+        <a [routerLink]="'error'" routerLinkActive="active">Bad Link</a>
+      </li>
+    </ul>
+  </div>
+  <router-outlet></router-outlet>
+</div>

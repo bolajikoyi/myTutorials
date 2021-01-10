@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="col-1">
+    <h3>Dashboard</h3>
+    <h4>Select Scary Movie</h4>
+    <select>
+      <option value="tt0175142">Scary Movie</option>
+      <option value="tt0257106">Scary Movie 2</option>
+      <option value="tt0306047">Scary Movie 3</option>
+      <option value="tt0362120">Scary Movie 4</option>
+      <option value="tt0795461">Scary Movie 5</option>
+    </select>
+
+    <h4>Select John Wick Movie</h4>
+    <select>
+      <option value="tt2911666">John Wick</option>
+      <option value="">John Wick: Chapter 2</option>
+      <option value="">John Wick: Chapter 3 -</option>
+    </select>
+
+    <app-child
+      [title]="'Child Component'"
+      (selectedMovie)="onMovieSelection($event)"
+    ></app-child>
+    <h3>Selected Movie : {{ selectedMovieName }}</h3>
+  </div>
+  <div class="col-2">
+    <div class="login-item">
+      <ng-container *ngIf="isLoggedIn; else elseTemplate">
+        welcome Admin
+      </ng-container>
+      <ng-template #elseTemplate> Login </ng-template>
+    </div>
+
+    <div class="login-item">Items in cart : {{ itemCount }}</div>
+
+    <app-header></app-header>
+  </div>
+</div>

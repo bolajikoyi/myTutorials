@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="header-buttons">
+    <ul>
+      <li>
+        <a [routerLink]="'first'" routerLinkActive="active">Tutorial One</a>
+      </li>
+      <li>
+        <a [routerLink]="'second'" routerLinkActive="active">Tutorial Two</a>
+      </li>
+      <li>
+        <a [routerLink]="'third'" routerLinkActive="active">Tutorial Three</a>
+      </li>
+      <li>
+        <a [routerLink]="'fourth'" routerLinkActive="active">Tutorial Four</a>
+      </li>
+      <li>
+        <a [routerLink]="'fifth'" routerLinkActive="active">Tutorial Five</a>
+      </li>
+      <li>
+        <a [routerLink]="'sixth'" routerLinkActive="active">Tutorial Six</a>
+      </li>
+      <li>
+        <a [routerLink]="'seventh'" routerLinkActive="active">Tutorial Seven</a>
+      </li>
+    </ul>
+  </div>
+  <div class="tutorial-body">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -12,42 +12,40 @@ li {
   width: 90%;
   border-radius: 5px;
   padding: 10px;
-  margin: 0 auto;
+
+  margin: 5px auto 0 auto;
 
 }
 .header-buttons ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   //border: 0.1px solid lightgray;
-  width: 50%;
-  margin: 0 auto 20px auto;
-  padding: 15px 10px;
-  border-radius: 5px;
-  background-color: rgb(211, 211, 211);
+  padding: 0 0 0 10px;
+  & li {
 
-
+  }
 }
 ul li a{
-  margin: 0 20px;
+  margin: 5px;
   color: black;
   text-align: center;
   border-radius: 5px;
   font-size: large;
+  padding: 5px 5px;
   &:hover {
-    text-decoration: overline;
+
   }
 }
 
 .active {
   background-color: gray;
   border-radius: 5px;
-  padding: 10px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 450px) and (max-width: 960px) {
   .header-buttons ul{
-    width: 80%;
+    width: 70%;
   }
   ul li a{
     font-size: 16px;
@@ -73,20 +71,21 @@ ul li a{
   .header-buttons ul{
     width: 30%;
     padding: 5px 0;
-    flex-direction: column;
   }
   ul li a{
-    font-size: 14px !important;
-    margin: 0 5px;
+    // font-size: 14px;
+    // margin: 0 5px;
     text-align: center;
   }
   ul li {
     justify-content: center;
     display: flex;
+    text-align: center;
   }
   .active {
     background-color: gray;
     border-radius: 2px;
     padding: 5px;
+    text-align: center;
   }
 }
