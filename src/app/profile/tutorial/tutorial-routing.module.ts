@@ -6,6 +6,8 @@ import { FourthTutorialComponent } from './fourth-tutorial/fourth-tutorial.compo
 import { SecondTutorialComponent } from './second-tutorial/second-tutorial.component';
 import { SeventhTutorialComponent } from './seventh-tutorial/seventh-tutorial.component';
 import { SixthTutorialComponent } from './sixth-tutorial/sixth-tutorial.component';
+import { SmartTable1Component } from './smart-table1/smart-table1.component';
+import { SmartTable2Component } from './smart-table2/smart-table2.component';
 import { ThirdTutorialComponent } from './third-tutorial/third-tutorial.component';
 import { TutorialComponent } from './tutorial.component';
 
@@ -15,6 +17,8 @@ const routes: Routes = [
     component: TutorialComponent,
     children: [
       { path: 'first', component: FirstTutorialComponent },
+      { path: 'smartTable1', component: SmartTable1Component },
+      { path: 'smartTable2', component: SmartTable2Component },
       { path: 'second', component: SecondTutorialComponent },
       { path: 'third', component: ThirdTutorialComponent },
       { path: 'fourth', component: FourthTutorialComponent },

@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+// tslint:disable-next-line: class-name
 interface tutorialLink {
   link: string;
   name: string;
+  sublink?: { link: string; name: string }[];
 }
 @Component({
   selector: 'app-tutorial',
@@ -11,9 +13,16 @@ interface tutorialLink {
 })
 export class TutorialComponent implements OnInit {
   tutorialLinks: tutorialLink[] = [
-    { link: 'first', name: 'Tutorial One' },
-    { link: 'second', name: 'Tutorial Two' },
-    { link: 'third', name: 'Tutorial Three' },
+    {
+      link: 'first',
+      name: 'ng2-smart-table',
+      sublink: [
+        { link: 'smartTable1', name: 'First Table' },
+        { link: 'smartTable2', name: 'Second Table' },
+      ],
+    },
+    { link: 'second', name: 'Angular Material' },
+    { link: 'third', name: 'Nebular' },
     { link: 'fourth', name: 'Tutorial Four' },
     { link: 'fifth', name: 'Tutorial Five' },
     { link: 'sixth', name: 'Tutorial Six' },

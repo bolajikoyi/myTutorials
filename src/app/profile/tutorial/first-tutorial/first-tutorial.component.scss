@@ -1,0 +1,127 @@
+
+$table-font-color: #606c71;
+$table-border-color: #e9ebec;
+
+// :host ::ng-deep {
+
+//     table{
+//       color: $table-font-color;
+//       text-align: center;
+//       tr {
+//         td,th{
+//           border: 1px solid $table-border-color;
+//         }
+//       }
+//     }
+//   }
+//   :host ::ng-deep {
+//     .name-class{
+//       color: red;
+//     }
+//   }
+
+
+// input.search-bar {
+//   margin: -60px 0 15px 0;
+//   height: 40px;
+//   min-width: 150px;
+// }
+
+// .smart-table {
+//   overflow: auto;
+//   width: 100%;
+// }
+
+:host {
+  ::ng-deep {
+    text-align: center;
+    a:link {
+      color: black;
+    }
+
+    ng2-smart-table {
+      .ng2-smart-actions ng2-st-tbody-edit-delete {
+        width: 60px;
+
+      }
+
+      .ng2-smart-sort-link {
+        font-weight: normal;
+      }
+
+      .ng2-smart-title {
+        font-weight: normal;
+      }
+
+      table {
+        border: none;
+        border-radius: 5px;
+
+        tbody tr:hover {
+          background: $table-border-color !important;
+          cursor: pointer;
+        }
+
+        thead {
+          border-bottom: 2px solid #c0c0c0;
+          font-weight: normal;
+        }
+
+        tr {
+          height: 20px;
+          border-bottom: 1px solid #c0c0c0;
+
+          :last-child {
+            border-bottom: none;
+          }
+
+          td, th {
+            padding: 10px;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .page-item.disabled .page-link {
+      color: darkgray !important;
+    }
+    .page-item.active .page-link {
+      background: black !important;
+      color: white !important;
+      border: 1px solid black !important;
+    }
+    .page-item {
+      margin: 3px;
+      // border: 1px solid lightgray;
+      // //padding: 8px;
+      // // padding-left: 14px;
+      // // padding-right: 14px;
+      // border-radius: 4px !important;
+    }
+    .page-link {
+      color: black !important;
+      padding: 8px;
+      padding-left: 14px;
+      padding-right: 14px;
+      border-radius: 4px !important;
+      border: 1px solid lightgray;
+    }
+    .page-link:hover {
+      background-color: black !important;
+      color: white !important;
+      border: 1px solid black;
+    }
+    .ng2-smart-pagination .page-link-next,
+    .ng2-smart-pagination .page-link-prev {
+      font-size: 14px !important;
+    }
+    .ng2-smart-page-item a:hover {
+      text-decoration: none !important;
+    }
+
+
+  }
+}
+
+
